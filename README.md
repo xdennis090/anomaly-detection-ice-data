@@ -2,6 +2,8 @@
 
 Eine Python- und Streamlit-Anwendung zur statistischen Erkennung von Verspätungsanomalien im deutschen Schienenfernverkehr (**ICE / IC / EC**) und anschließenden KI-gestützten Ursachenanalyse (**Root Cause Analysis**) mittels lokaler Sprachmodelle (**Ollama**) und dynamischer Webrecherche (**Tavily API**).
 
+![Streamlit Dashboard Übersicht](assets/dashboard_overview.png)
+
 ## Systemarchitektur & Methodik
 
 Das System kombiniert eine statistische Anomalieerkennung auf historischen Fahrplandaten mit einer zweistufigen Retrieval-Augmented-Generation-Pipeline (RAG):
@@ -20,10 +22,17 @@ Nur an Tagen, an denen die durchschnittliche Verspätung den globalen Schwellenw
 * **Interaktives Streamlit-Dashboard (`src/app.py`, `src/ui_components.py`):** Explorative Zeitreihen- und Kalendervisualisierungen, On-Demand-Ursachenanalyse und integriertes Qualitäts-Feedback (`evaluation/feedback_data.csv`).
 * **Automatisierte Batch-Evaluation (`src/run_batch_evaluation.py`):** Reproduzierbare Testreihe über 21 historische Kern-Anomalietage mit Zeit- und Quellenmetriken (`evaluation/evaluation_log.csv`) sowie generiertem Gesamtbericht (`evaluation/report.md`).
 
-## Ergebnisse & Visualisierungen
+## Dashboard & Evaluationsergebnisse
 
-### Erkannte Verspätungsanomalien (Juli 2024 – Januar 2026)
-![Zeitreihe der erkannten Anomalien](assets/anomaly_timeseries.png)
+### Anomalie-Steckbrief & KI-Ursachenanalyse (RAG-Output)
+![Anomalie-Steckbrief](assets/dashboard_steckbrief.png)
+
+![RAG-Ursachenanalyse mit Quellenbelegen](assets/dashboard_ursachenanalyse.png)
+
+### Kalender-Heatmap & Regionale Hotspots
+![Kalender-Heatmap](assets/dashboard_heatmap.png)
+
+![Regionale Hotspots](assets/dashboard_hotspots.png)
 
 ### Evaluationsgüte nach Störungsursache
 ![Evaluations-Scores nach Cluster](assets/evaluation_clusters.png)
@@ -37,7 +46,7 @@ Nur an Tagen, an denen die durchschnittliche Verspätung den globalen Schwellenw
 ## Projektstruktur
 
 ```text
-├── assets/                          # Architektur- und Auswertungsgrafiken für die Dokumentation
+├── assets/                          # Architektur-, Dashboard- und Auswertungsgrafiken
 ├── data/
 │   ├── raw/                         # Monatliche Rohdaten (nicht im Repository enthalten)
 │   └── processed/                   # Generierte Parquet-, CSV- und JSON-Arbeitsdateien
@@ -81,7 +90,8 @@ Nur an Tagen, an denen die durchschnittliche Verspätung den globalen Schwellenw
 2. **Umgebungsvariablen konfigurieren:**
    Kopiere `.env.example` nach `.env` und hinterlege deinen [Tavily API-Key](https://tavily.com):
    ```bash
-   cp .env.example .env
+   cp .env.example .env        # Linux/macOS/PowerShell
+   # copy .env.example .env    # Windows (CMD)
    ```
 
 3. **Lokale Sprachmodelle mit Ollama herunterladen:**
