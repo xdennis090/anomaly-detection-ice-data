@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Zentrales Stylesheet zur Anpassung der Dashboard-Benutzeroberfläche.
+   Diese Datei überschreibt standardmäßige Streamlit-Komponenten, um eine
+   konsistente visuelle Hierarchie und die im HCI-Konzept geforderten 
+   Design-Richtlinien umzusetzen.
+   ========================================================================== */
+
+.main { 
+    background-color: #0e1117; 
+}
+
+[data-testid="stMetricValue"] { 
+    font-size: 26px; 
+    color: #5dade2; 
+}
+
+.stButton>button { 
+    background-color: #e74c3c; 
+    color: white; 
+    border-radius: 8px;
+    font-weight: bold; 
+    border: none; 
+    transition: 0.3s; 
+    width: 100%;
+}
+
+.stButton>button:hover { 
+    background-color: #c0392b; 
+}
+
+section[data-testid="stSidebar"] { 
+    background-color: #11141c; 
+    border-right: 1px solid #2d3436; 
+}
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #1a1c24;
+}

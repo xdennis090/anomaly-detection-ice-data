@@ -1,0 +1,22 @@
+Datum;Score_K1;Score_K2;Score_K3;Score_K4;Gesamt_Score;Delay_Min;Ursache_Ground_Truth
+09.08.2024;3.5;3.5;4.0;5.0;4.00;19.80;Stellwerksstörungen (Nürnberg/München/Leipzig)
+07.09.2024;4.5;5.0;5.0;5.0;4.88;21.04;Großflächiger GSM-R-Zugfunkausfall (Frankfurt)
+14.11.2024;2.0;2.0;2.0;4.0;2.50;21.14;Streckenblockierung nach Kampfmittelfund (Kassel)
+30.06.2025;0.0;1.0;1.0;1.0;0.75;20.72;Reguläres Betriebsrauschen (Lokale Weichenschäden München)
+01.07.2025;3.5;3.5;4.0;4.0;3.75;32.21;Hitzewelle (Böschungsbrände & Leitungsstörungen Norddeutschland)
+02.07.2025;3.0;3.0;3.0;1.5;2.63;31.47;Thermische Oberleitungsschäden & Stromausfall (Köln/Frankfurt)
+03.07.2025;2.0;2.0;2.0;2.5;2.13;19.87;Weichen- und Motorendefekte durch Hitze
+04.07.2025;2.0;2.0;2.0;3.0;2.25;22.01;Streckensperrungen durch Böschungsbrände (Forchheim/Erfurt)
+10.07.2025;0.0;0.0;1.0;1.0;0.50;21.27;Infrastrukturelle Streckensperrung (München–Holzkirchen)
+14.07.2025;0.0;0.0;0.0;0.0;0.00;19.03;Reguläres Betriebsrauschen (Lokale Stellwerksdefekte Köln)
+19.09.2025;2.5;2.0;3.0;4.5;3.00;18.11;Baubedingte Vollsperrung (Generalsanierung Deutsches Eck)
+22.09.2025;3.0;2.5;3.5;4.0;3.25;24.58;Oberleitungsstörungen und Infrastruktur-Vandalismus (Köln)
+13.10.2025;0.0;1.0;2.0;1.0;1.00;20.47;Witterungsunabhängige Betriebsbehinderungen (Hannover/Nürnberg)
+15.10.2025;3.5;3.0;4.0;5.0;3.88;20.87;Kritische Stellwerksdefekte und Kabelschäden (Hamburg/Köln)
+23.10.2025;0.0;1.0;1.0;1.0;0.75;19.43;Sturmtief Joshua (Bundesweite witterungsbedingte Schäden)
+24.10.2025;3.0;3.0;3.0;4.0;3.25;22.61;Sturmtief Joshua (Gleisblockaden durch Windwurf)
+30.10.2025;0.0;0.0;2.0;0.0;0.50;18.07;Reguläres Betriebsrauschen (Lokale Baustellenaktivitäten)
+12.01.2026;3.5;3.5;3.0;3.5;3.38;21.38;Kombiniertes Winterwetter (Sturmtief Ellie & Tief Gunda)
+26.01.2026;4.5;4.5;4.0;5.0;4.50;28.78;Wintertief Leonie (Bundesweites Weichen- und Schienenchaos)
+27.01.2026;4.5;4.0;4.0;5.0;4.38;20.57;Wintertief Leonie (Anhaltendes Blitzeis und Glättebedingungen)
+30.01.2026;2.0;2.0;2.5;2.0;2.13;18.54;Regionaler ver.di-Warnstreik im kommunalen Nahverkehr
